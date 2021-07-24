@@ -97,4 +97,3 @@ class Image {
 }
 
 
-}
