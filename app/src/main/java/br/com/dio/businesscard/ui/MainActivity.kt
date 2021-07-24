@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, AddBusinessCardActivity::class.java)
             startActivity(intent)
         }
+        adapter.listenerShare = { card ->
+            Image.share(this@MainActivity, card)
+        }
     }
 
     private  fun getAllBusinessCard() {
